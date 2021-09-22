@@ -34,10 +34,12 @@ for (let i = 0; i < btns.length; i++) {
     }
   });
   resetButton.addEventListener('click',function(){
+    tipAmount = 0;
+    totalAmount = 0;
     btns[i].classList.remove('active')
     bill.value=''
     tipAmountText.innerText='0'
-    totalAmountText.innerText=0
+    totalAmountText.innerText='0'
     nrPeople.value=''
 })
 }
